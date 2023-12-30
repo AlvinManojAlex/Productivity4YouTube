@@ -9,10 +9,6 @@
       "default_popup": "popup.html"
     },
 
-    "icons": {
-      "48": "icon.png"
-    },
-
     "content_scripts": [
       {
         "matches": ["*://www.youtube.com/*"],
