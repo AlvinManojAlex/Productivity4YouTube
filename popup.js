@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   
     document.getElementById('noButton').addEventListener('click', function() {
+      chrome.runtime.sendMessage({action: 'showPopup'})
       window.close();
     });
   });
