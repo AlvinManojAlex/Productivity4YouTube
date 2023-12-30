@@ -1,10 +1,10 @@
 {
-    "manifest_version": 2,
+    "manifest_version": 3,
     "name": "Productivity4YouTube",
     "version": "1.0",
     "description": "This is a productivity-based chrome extension for YouTube that prompts the user, if they have completed their tasks for the day before binging YouTube.",
     "permissions": ["activeTab"],
-    "browser_action": {
+    "action": {
       "default_popup": "popup.html"
     },
 
@@ -16,7 +16,6 @@
     ],
 
     "background": {
-      "scripts": ["background.js"],
-      "persistent": false
+      "service_worker": ["background.js"]
     }
   }
