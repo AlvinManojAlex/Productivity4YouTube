@@ -2,7 +2,7 @@
 // This is the file that will handle when YouTube is opened and show the popup
 
 htmlContent = '<h1>Did you complete your work?</h1><button id="yesButton">Yes</button><button id="noButton">No</button>'
-cssText = 'position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: white; padding: 20px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); z-index: 9999;'
+cssContent = 'position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: white; padding: 20px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); z-index: 9999;'
 
 chrome.runtime.onMessage.addListener(
   function(request, sender, sendResponse) {
