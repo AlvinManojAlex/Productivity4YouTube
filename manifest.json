@@ -4,9 +4,6 @@
     "version": "1.0",
     "description": "This is a productivity-based chrome extension for YouTube that prompts the user, if they have completed their tasks for the day before binging YouTube.",
     "permissions": ["activeTab"],
-    "action": {
-      "default_popup": "popup.html"
-    },
 
     "content_scripts": [
       {
