@@ -4,6 +4,10 @@
 chrome.runtime.onMessage.addListener(
   function(request, sender, sendResponse) {
     if (request.action === 'showPopup') {
+      // First, check for the internet connection
+      if (!navigator.onLine) {
+        return;
+      }
       // Open the reminder popup
       if (!document.getElementById('workReminderPopup')) {
         var popup = document.createElement('div');
