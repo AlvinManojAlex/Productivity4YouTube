@@ -2,7 +2,7 @@
 // This is the file that will handle when YouTube is opened and show the popup
 
 // Declare a variable to store the HTML string
-const popupTemplateHTML = '<div id="workReminderPopup"><h1>Did you complete your work?</h1><button id="yesButton">Yes</button><button id="noButton">No</button></div>';
+const popupTemplateHTML = '<h1>Did you complete your work?</h1><button id="yesButton">Yes</button><button id="noButton">No</button>';
 
 const popupStyle = `
 position: fixed;
@@ -86,5 +86,5 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
 
 // Check for YouTube page and show the popup
 if (window.location.href.includes("youtube.com")) {
-  chrome.runtime.sendMessage({ action: 'showPopup' });
+  showPopup();
 }
